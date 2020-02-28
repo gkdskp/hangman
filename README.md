@@ -8,7 +8,9 @@ Python 3.x
 ## Usage
 Navigate to the Hangman folder and run
 
-``` python hangman.py ```
+``` 
+python hangman.py
+```
 
 ## Screenshot
 ![Screenshot](./assets/ss.png)
