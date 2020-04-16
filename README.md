@@ -2,7 +2,7 @@
 A text based single player game where the player has to guess a word by 
 suggesting letters within five guesses.
 
-## Prerequisite
+## Requirements
 Python 3.x
 
 ## Usage
