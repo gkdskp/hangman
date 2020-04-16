@@ -51,7 +51,7 @@ def startGame(word, attempts, found):
 words = [
     "ALPHABET", "AEROPLANE", "IRREGARDLESS",
     "CALCULATOR", "ENCYCLOPEDIA", "DISINTERESTED",
-    "MASTERPIECE"
+    "MASTERPIECE", "TELEVISION"
 ]
 
 x = int(len(words) * random.random())
