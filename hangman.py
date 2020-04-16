@@ -1,4 +1,4 @@
-# BE10105 Project
+# BE10105 Project S1
 
 # Submitted by:
 #	Akshay Raj PB
