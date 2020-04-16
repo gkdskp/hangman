@@ -59,3 +59,12 @@ attempts = 5
 found = []
 print("Length of the word is: {0}".format(len(word)))
 startGame(word, attempts, found)
+
+
+# sfgn
+# sfgnsr
+# gnsrgn
+# srgn
+# srgn
+# srgmn
+# sg
