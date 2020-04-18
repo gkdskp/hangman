@@ -69,3 +69,5 @@ startGame(word, attempts, found)
 # srgn
 # srgmn
 # sg
+
+#this is for checking
