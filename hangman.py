@@ -8,26 +8,30 @@
 
 import random
 
-print("HANGMAN Game")
-print("-------------------------------")
-
+NO_OF_ATTEMPTS = 5
+WORDS = [
+    "ALPHABET", "AEROPLANE", "IRREGARDLESS",
+    "CALCULATOR", "ENCYCLOPEDIA", "DISINTERESTED"
+]
 
 def startGame(word, attempts, found):
     if attempts == 0:
         print("You Lost! The word is {0}".format(word))
         return
+
     if len(found) == len(word):
         print("You won! The word is {0}".format(word))
         return
+
     s = ""
 
     for i in range(len(word)):
-
         if i in found:
             k = word[i] + " "
         else:
             k = "_ "
-        s = s + k
+        s += k
+
     print(s)
     print("Attempts left: {0}".format(attempts))
     y = input("Enter guess: ").upper()
@@ -40,22 +44,19 @@ def startGame(word, attempts, found):
                 found.append(i)
             print("The letter found at {0}th position".format(i+1))
             c = 0
+
     if c == -1:
-        attempts = attempts - 1
-    print()
-    print()
-    print()
+        attempts -= 1
+
+    print("\n\n\n")
     startGame(word, attempts, found)
 
+if __name__ == '__main__':
+    print("HANGMAN Game")
+    print("-"*8)
 
-words = [
-    "ALPHABET", "AEROPLANE", "IRREGARDLESS",
-    "CALCULATOR", "ENCYCLOPEDIA", "DISINTERESTED"
-]
-
-x = int(len(words) * random.random())
-word = words[x].upper()
-attempts = 5
-found = []
-print("Length of the word is: {0}".format(len(word)))
-startGame(word, attempts, found)
+    x = int(len(WORDS) * random.random())
+    word = WORDS[x].upper()
+    found = []
+    print("Length of the word is: {0}".format(len(word)))
+    startGame(word, NO_OF_ATTEMPTS, found)
